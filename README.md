@@ -5,9 +5,10 @@ Play a game of Russian Roulette
 Usage
 -----
 
-Download the .rb file, and place it in a subdirectory of your bot entitled 
-`plugins` then require it via `require_relative`. Until I figure out how
-to make it into a gem. Add it to your bot like so:
+Until I figure out how to make it into a gem, download the .rb file, and place 
+it in a subdirectory of your bot entitled 
+`plugins` then require it via `require_relative`. 
+Add it to your bot like so:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ruby
 require 'cinch'
@@ -30,6 +31,7 @@ Contained Commands
 ------------------
 
 [rr]
+
 Take your chances with the six shooter.
 
 License
