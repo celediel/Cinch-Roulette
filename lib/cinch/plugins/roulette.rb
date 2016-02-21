@@ -22,8 +22,18 @@ module Cinch
 
       public
 
-      match(/rr$/)
-      def execute(m)
+      match(/spin$/, method: :spin)
+      def spin(m)
+        @shells[m.channel] = 6
+        @shot[m.channel] = rand(1..@shells[m.channel])
+        lines = '=' * 10
+        puts "#{lines}\nShells left: #{@shells[m.channel]}"
+        puts "Hot shot: #{@shot[m.channel]}\n#{lines}"
+        m.action_reply 'spins the chamber!'
+      end
+
+      match(/rr$/, method: :rr)
+      def rr(m)
         # just starting?
         @shells[m.channel] = 6 if @shells[m.channel].nil?
         @shot[m.channel] = rand(1..@shells[m.channel]) if @shot[m.channel].nil?
