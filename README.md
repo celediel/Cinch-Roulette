@@ -34,6 +34,10 @@ Contained Commands
 
 Take your chances with the six shooter.
 
+[spin]
+
+Spin the relvover, resetting the position of the bullet.
+
 License
 -------
 
