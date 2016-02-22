@@ -41,5 +41,5 @@ Spin the relvover, resetting the position of the bullet.
 License
 -------
 
-Licensed under Creative Commons by-nc-sa 4.0
-http://creativecommons.org/licenses/by-nc-sa/4.0/
+Licensed under The MIT License (MIT)
+Please see LICENSE
