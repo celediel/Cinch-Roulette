@@ -10,7 +10,6 @@ module Cinch
     # Roulette game
     class Roulette
       include Cinch::Plugin
-      set :prefix, /^\./
 
       private
 
@@ -49,6 +48,8 @@ module Cinch
           @shot[m.channel] = rand(1..@shells[m.channel])
           m.reply 'Bang!'
           m.channel.kick(shooter, 'Bad luck, you\'re dead!')
+          sleep(2)
+          m.action_reply 'reloads the revolver and spins the chamber!'
         else
           m.reply 'Click!'
           @shells[m.channel] -= 1

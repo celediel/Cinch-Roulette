@@ -5,14 +5,12 @@ Play a game of Russian Roulette
 Usage
 -----
 
-Until I figure out how to make it into a gem, download the .rb file, and place 
-it in a subdirectory of your bot entitled 
-`plugins` then require it via `require_relative`. 
-Add it to your bot like so:
+Install the gem with *gem install Cinch-Roulette*
+add it to your bot like so:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ruby
 require 'cinch'
-require_relative 'plugins/roulette.rb'
+require 'cinch/plugins/roulette'
 
 bot = Cinch::Bot.new do
 configure do |c|
