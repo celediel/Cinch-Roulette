@@ -13,13 +13,14 @@ require 'cinch'
 require 'cinch/plugins/roulette'
 
 bot = Cinch::Bot.new do
-configure do |c|
-  c.server = 'your server'
-  c.nick = 'your nick'
-  c.realname = 'your realname'
-  c.user = 'your user'
-  c.channels = ['#yourchannel']
-  c.plugins.plugins = [Cinch::Plugins::Roulette]
+  configure do |c|
+    c.server = 'your server'
+    c.nick = 'your nick'
+    c.realname = 'your realname'
+    c.user = 'your user'
+    c.channels = ['#yourchannel']
+    c.plugins.plugins = [Cinch::Plugins::Roulette]
+  end
 end
 
 bot.start
