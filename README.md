@@ -5,6 +5,8 @@ Play a game of Russian Roulette
 Usage
 -----
 
+[![Gem Version](https://badge.fury.io/rb/Cinch-Roulette.svg)](https://badge.fury.io/rb/Cinch-Roulette)
+
 Install the gem with *gem install Cinch-Roulette*
 add it to your bot like so:
 
